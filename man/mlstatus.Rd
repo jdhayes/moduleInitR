@@ -2,7 +2,7 @@
 \alias{mlstatus}
 \docType{data}
 \title{
-%%   ~~ data name/kind ... ~~
+data name/kind ...
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~

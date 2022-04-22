@@ -1,5 +1,7 @@
 # define modules runtine quarantine configuration
 Sys.setenv('MODULES_RUN_QUARANTINE'='LD_LIBRARY_PATH LD_PRELOAD')
+Sys.setenv('MODULEPATH'='/opt/linux/rocky/8.x/x86_64/modules')
+Sys.setenv('HPCC_MODULES'='/opt/linux/rocky/8.x/x86_64/pkgs')
 
 # setup quarantine if defined
 mlre <- ''

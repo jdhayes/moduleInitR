@@ -49,7 +49,13 @@ close(cmdpipe)
   # Make sure to process default modules after the environment is set with the above loop
   for (x in seq(1,length(default_modules[[1]]))){
     module_name <- default_modules[[1]][x]
-    print(paste("Loading module",module_name))
-    try(eval(paste('module("load",',module_name,')')))
+    print(paste("Loading module", module_name))
+
+    # MAKE A LIST
+    mls <- list('load',module_name)
+    names(mls) <- list('x','y')
+    do.call("module", mls)
   }
+
+  module('list')
 }
